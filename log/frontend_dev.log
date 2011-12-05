@@ -1,0 +1,338 @@
+Dec 05 12:29:26 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:29:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:29:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:29:26 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:29:26 symfony [err] {sfWebDebugLogger}  Strict notice at /var/www/serialkiller/apps/frontend/modules/series/actions/actions.class.php on line 20 (Non-static method Doctrine_Table::findAll() should not be called statically, assuming $this from incompatible context)
+Dec 05 12:29:26 symfony [err] {sfException} Call to undefined method seriesActions::createQuery.
+Dec 05 12:29:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 05 12:29:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:29:26 symfony [info] {sfWebDebugLogger} Configuration 106.97 ms (8)
+Dec 05 12:29:26 symfony [info] {sfWebDebugLogger} Factories 76.01 ms (1)
+Dec 05 12:29:26 symfony [info] {sfWebDebugLogger} Action "series/index" 75.49 ms (1)
+Dec 05 12:31:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:31:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:31:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:31:42 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:31:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:31:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:31:42 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:31:43 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:31:43 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:31:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:31:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:31:43 symfony [info] {sfWebDebugLogger} Configuration 82.02 ms (9)
+Dec 05 12:31:43 symfony [info] {sfWebDebugLogger} Factories 53.33 ms (1)
+Dec 05 12:31:43 symfony [info] {sfWebDebugLogger} Action "series/index" 14.65 ms (1)
+Dec 05 12:31:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 05 12:31:43 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 768.22 ms (1)
+Dec 05 12:31:57 symfony [info] {sfWebResponse} Send content (20486186 o)
+Dec 05 12:35:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:35:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:35:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:35:13 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:35:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:35:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:35:13 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:35:13 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "episodes" on "Serie"
+Dec 05 12:35:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 05 12:35:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:35:14 symfony [info] {sfWebDebugLogger} Configuration 118.24 ms (9)
+Dec 05 12:35:14 symfony [info] {sfWebDebugLogger} Factories 71.47 ms (1)
+Dec 05 12:35:14 symfony [info] {sfWebDebugLogger} Action "series/index" 13.39 ms (1)
+Dec 05 12:35:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 05 12:35:14 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 71.49 ms (1)
+Dec 05 12:35:28 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:35:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:35:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:35:29 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:35:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:35:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:35:29 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:35:29 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "episodes" on "Serie"
+Dec 05 12:35:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 05 12:35:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:35:29 symfony [info] {sfWebDebugLogger} Configuration 1.20 ms (9)
+Dec 05 12:35:29 symfony [info] {sfWebDebugLogger} Factories 49.66 ms (1)
+Dec 05 12:35:29 symfony [info] {sfWebDebugLogger} Action "series/index" 53.00 ms (1)
+Dec 05 12:35:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 05 12:35:29 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 86.34 ms (1)
+Dec 05 12:38:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:38:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:38:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:38:22 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:38:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:38:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:38:22 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:38:22 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "Episodes" on "Serie"
+Dec 05 12:38:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 05 12:38:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:38:22 symfony [info] {sfWebDebugLogger} Configuration 82.73 ms (9)
+Dec 05 12:38:22 symfony [info] {sfWebDebugLogger} Factories 53.60 ms (1)
+Dec 05 12:38:22 symfony [info] {sfWebDebugLogger} Action "series/index" 6.29 ms (1)
+Dec 05 12:38:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 05 12:38:22 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 57.09 ms (1)
+Dec 05 12:39:36 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:39:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:39:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:39:36 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:39:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:39:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:39:36 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:39:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:39:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:39:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:39:58 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:39:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:39:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:39:58 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:39:59 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:39:59 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:39:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:39:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:39:59 symfony [info] {sfWebDebugLogger} Configuration 130.80 ms (9)
+Dec 05 12:39:59 symfony [info] {sfWebDebugLogger} Factories 58.23 ms (1)
+Dec 05 12:39:59 symfony [info] {sfWebDebugLogger} Action "series/index" 7.87 ms (1)
+Dec 05 12:39:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 05 12:39:59 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 280.53 ms (1)
+Dec 05 12:40:03 symfony [info] {sfWebResponse} Send content (6612113 o)
+Dec 05 12:42:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:42:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:42:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:42:03 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:42:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:42:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:42:03 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:42:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:42:03 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:42:03 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:42:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:42:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:42:03 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (9)
+Dec 05 12:42:03 symfony [info] {sfWebDebugLogger} Factories 12.81 ms (1)
+Dec 05 12:42:03 symfony [info] {sfWebDebugLogger} Action "series/index" 4.85 ms (1)
+Dec 05 12:42:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:42:03 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 38.54 ms (1)
+Dec 05 12:42:03 symfony [info] {sfWebResponse} Send content (33938 o)
+Dec 05 12:43:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:43:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:43:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:43:48 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:43:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:43:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:43:48 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:43:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:43:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (2)
+Dec 05 12:43:48 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:43:48 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:43:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:43:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:43:48 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (9)
+Dec 05 12:43:48 symfony [info] {sfWebDebugLogger} Factories 4.84 ms (1)
+Dec 05 12:43:48 symfony [info] {sfWebDebugLogger} Action "series/index" 8.84 ms (1)
+Dec 05 12:43:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Dec 05 12:43:48 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 64.21 ms (1)
+Dec 05 12:43:48 symfony [info] {sfWebResponse} Send content (39885 o)
+Dec 05 12:44:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:44:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:44:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:44:23 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:44:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:44:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 12:44:23 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:44:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:44:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (2)
+Dec 05 12:44:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (3)
+Dec 05 12:44:23 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:44:23 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:44:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:44:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:44:23 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (9)
+Dec 05 12:44:23 symfony [info] {sfWebDebugLogger} Factories 6.54 ms (1)
+Dec 05 12:44:23 symfony [info] {sfWebDebugLogger} Action "series/index" 5.06 ms (1)
+Dec 05 12:44:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (5)
+Dec 05 12:44:23 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 81.45 ms (1)
+Dec 05 12:44:23 symfony [info] {sfWebResponse} Send content (42188 o)
+Dec 05 12:58:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:58:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:58:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:58:14 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:58:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:58:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:58:14 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:58:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:58:14 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:14 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:58:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Factories 6.08 ms (1)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Action "series/index" 16.05 ms (1)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 21.30 ms (1)
+Dec 05 12:58:14 symfony [info] {sfWebResponse} Send content (32132 o)
+Dec 05 12:58:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:58:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:58:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:58:14 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:58:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:58:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:58:14 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:58:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:58:14 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:14 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:58:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Configuration 0.97 ms (9)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Factories 9.27 ms (1)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Action "series/index" 6.51 ms (1)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:58:14 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 27.54 ms (1)
+Dec 05 12:58:14 symfony [info] {sfWebResponse} Send content (32170 o)
+Dec 05 12:58:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:58:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:58:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:58:18 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:58:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:58:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:58:18 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:58:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:58:18 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:18 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:58:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:58:18 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Dec 05 12:58:18 symfony [info] {sfWebDebugLogger} Factories 4.77 ms (1)
+Dec 05 12:58:18 symfony [info] {sfWebDebugLogger} Action "series/index" 8.82 ms (1)
+Dec 05 12:58:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:58:18 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 14.23 ms (1)
+Dec 05 12:58:18 symfony [info] {sfWebResponse} Send content (32099 o)
+Dec 05 12:58:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:58:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:58:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:58:56 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:58:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:58:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:58:56 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:58:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:58:56 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:56 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:58:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Configuration 97.43 ms (9)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Factories 56.20 ms (1)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Action "series/index" 13.54 ms (1)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 22.05 ms (1)
+Dec 05 12:58:56 symfony [info] {sfWebResponse} Send content (32136 o)
+Dec 05 12:58:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:58:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:58:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:58:56 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:58:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:58:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:58:56 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:58:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:58:56 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:56 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:58:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Factories 13.21 ms (1)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Action "series/index" 12.05 ms (1)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:58:56 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 20.80 ms (1)
+Dec 05 12:58:56 symfony [info] {sfWebResponse} Send content (32173 o)
+Dec 05 12:58:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:58:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:58:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:58:58 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:58:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:58:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:58:58 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:58:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:58:58 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:58 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:58:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:58:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:58:58 symfony [info] {sfWebDebugLogger} Configuration 5.15 ms (9)
+Dec 05 12:58:58 symfony [info] {sfWebDebugLogger} Factories 5.14 ms (1)
+Dec 05 12:58:58 symfony [info] {sfWebDebugLogger} Action "series/index" 6.48 ms (1)
+Dec 05 12:58:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:58:58 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 23.32 ms (1)
+Dec 05 12:58:59 symfony [info] {sfWebResponse} Send content (32098 o)
+Dec 05 12:59:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 12:59:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 12:59:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 12:59:29 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 12:59:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 12:59:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 12:59:29 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 12:59:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 12:59:29 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:59:29 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 12:59:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 12:59:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 12:59:29 symfony [info] {sfWebDebugLogger} Configuration 104.71 ms (9)
+Dec 05 12:59:29 symfony [info] {sfWebDebugLogger} Factories 66.94 ms (1)
+Dec 05 12:59:29 symfony [info] {sfWebDebugLogger} Action "series/index" 7.80 ms (1)
+Dec 05 12:59:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 12:59:29 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 21.68 ms (1)
+Dec 05 12:59:29 symfony [info] {sfWebResponse} Send content (32184 o)
+Dec 05 13:00:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 13:00:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 13:00:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 13:00:18 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 13:00:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 13:00:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.image AS s__image FROM serie s - ()
+Dec 05 13:00:18 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 13:00:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 13:00:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (2)
+Dec 05 13:00:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (3)
+Dec 05 13:00:18 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (4)
+Dec 05 13:00:18 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 13:00:18 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 13:00:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 13:00:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 13:00:18 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Dec 05 13:00:18 symfony [info] {sfWebDebugLogger} Factories 5.55 ms (1)
+Dec 05 13:00:18 symfony [info] {sfWebDebugLogger} Action "series/index" 5.80 ms (1)
+Dec 05 13:00:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (6)
+Dec 05 13:00:18 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 121.35 ms (1)
+Dec 05 13:00:18 symfony [info] {sfWebResponse} Send content (51305 o)
+Dec 05 13:06:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 13:06:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 13:06:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 13:06:53 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 13:06:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 13:06:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 13:06:53 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 13:06:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 13:06:53 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 13:06:53 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 13:06:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 13:06:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 13:06:53 symfony [info] {sfWebDebugLogger} Configuration 86.30 ms (9)
+Dec 05 13:06:53 symfony [info] {sfWebDebugLogger} Factories 56.25 ms (1)
+Dec 05 13:06:53 symfony [info] {sfWebDebugLogger} Action "series/index" 6.63 ms (1)
+Dec 05 13:06:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 13:06:53 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 66.93 ms (1)
+Dec 05 13:06:53 symfony [info] {sfWebResponse} Send content (38457 o)
+Dec 05 13:07:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'series',  'action' => 'index',)
+Dec 05 13:07:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 13:07:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 13:07:11 symfony [info] {seriesActions} Call "seriesActions->executeIndex()"
+Dec 05 13:07:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 13:07:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name FROM serie s - ()
+Dec 05 13:07:11 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/modules/series/templates/indexSuccess.php"
+Dec 05 13:07:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (1)
+Dec 05 13:07:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.serie AS e__serie, e.date AS e__date FROM episode e WHERE (e.serie IN (?)) - (2)
+Dec 05 13:07:11 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 13:07:11 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/frontend/templates/layout.php"
+Dec 05 13:07:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 13:07:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 13:07:11 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (9)
+Dec 05 13:07:11 symfony [info] {sfWebDebugLogger} Factories 7.28 ms (1)
+Dec 05 13:07:11 symfony [info] {sfWebDebugLogger} Action "series/index" 5.40 ms (1)
+Dec 05 13:07:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Dec 05 13:07:11 symfony [info] {sfWebDebugLogger} View "Success" for "series/index" 95.67 ms (1)
+Dec 05 13:07:11 symfony [info] {sfWebResponse} Send content (44221 o)

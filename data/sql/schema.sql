@@ -1,0 +1,5 @@
+CREATE TABLE episode (id INT AUTO_INCREMENT, season INT NOT NULL, episode INT NOT NULL, name VARCHAR(126) NOT NULL, serie INT NOT NULL, date DATE NOT NULL, INDEX serie_idx (serie), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE link (id INT AUTO_INCREMENT, url TEXT NOT NULL, episode INT NOT NULL, INDEX episode_idx (episode), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE serie (id INT AUTO_INCREMENT, name VARCHAR(126) NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+ALTER TABLE episode ADD CONSTRAINT episode_serie_serie_id FOREIGN KEY (serie) REFERENCES serie(id);
+ALTER TABLE link ADD CONSTRAINT link_episode_episode_id FOREIGN KEY (episode) REFERENCES episode(id);
