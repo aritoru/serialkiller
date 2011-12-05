@@ -1,0 +1,43 @@
+link:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                link
+    module:               link
+    prefix_path:          /link
+    column:               id
+    with_wildcard_routes: true
+
+episode:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                episode
+    module:               episode
+    prefix_path:          /episode
+    column:               id
+    with_wildcard_routes: true
+
+serie:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Serie
+    module:               serie
+    prefix_path:          /serie
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,67 @@
+Dec 05 09:31:05 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+Dec 05 09:31:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 09:31:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 09:31:05 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+Dec 05 09:31:05 symfony [info] {sfPHPView} Render "/var/www/serialkiller/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
+Dec 05 09:31:05 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 05 09:31:05 symfony [info] {sfPHPView} Render "/var/www/serialkiller/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Dec 05 09:31:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 09:31:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 09:31:05 symfony [info] {sfWebDebugLogger} Configuration 104.53 ms (9)
+Dec 05 09:31:05 symfony [info] {sfWebDebugLogger} Factories 106.30 ms (1)
+Dec 05 09:31:05 symfony [info] {sfWebDebugLogger} Action "default/index" 0.17 ms (1)
+Dec 05 09:31:05 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 9.20 ms (1)
+Dec 05 09:31:05 symfony [info] {sfWebResponse} Send content (28619 o)
+Dec 05 09:31:10 symfony [info] {sfPatternRouting} Match route "link" (/link.:sf_format) for /link with parameters array (  'module' => 'link',  'action' => 'index',  'sf_format' => 'html',)
+Dec 05 09:31:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 09:31:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 09:31:10 symfony [info] {linkActions} Call "linkActions->executeIndex()"
+Dec 05 09:32:20 symfony [info] {sfPatternRouting} Match route "link" (/link.:sf_format) for /link with parameters array (  'module' => 'link',  'action' => 'index',  'sf_format' => 'html',)
+Dec 05 09:32:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 09:32:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 09:32:20 symfony [info] {linkActions} Call "linkActions->executeIndex()"
+Dec 05 09:32:22 symfony [info] {sfPatternRouting} Match route "link" (/link.:sf_format) for /link with parameters array (  'module' => 'link',  'action' => 'index',  'sf_format' => 'html',)
+Dec 05 09:32:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 09:32:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 09:32:22 symfony [info] {linkActions} Call "linkActions->executeIndex()"
+Dec 05 09:32:25 symfony [info] {sfPatternRouting} Match route "link" (/link.:sf_format) for /link with parameters array (  'module' => 'link',  'action' => 'index',  'sf_format' => 'html',)
+Dec 05 09:32:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 09:32:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 09:32:25 symfony [info] {linkActions} Call "linkActions->executeIndex()"
+Dec 05 09:33:22 symfony [info] {sfPatternRouting} Match route "link" (/link.:sf_format) for /link with parameters array (  'module' => 'link',  'action' => 'index',  'sf_format' => 'html',)
+Dec 05 09:33:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 05 09:33:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 05 09:33:22 symfony [info] {linkActions} Call "linkActions->executeIndex()"
+Dec 05 09:33:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 05 09:33:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM link l - ()
+Dec 05 09:33:22 symfony [info] {sfPHPView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/indexSuccess.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_assets.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_flashes.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_list_header.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_filters.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_filters_field.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_filters_field.php"
+Dec 05 09:33:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id AS e__id, e.season AS e__season, e.episode AS e__episode, e.name AS e__name, e.show AS e__show FROM episode e - ()
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_list.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_list_batch_actions.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_list_actions.php"
+Dec 05 09:33:22 symfony [info] {sfPartialView} Render "/var/www/serialkiller/cache/backend/dev/modules/autoLink/templates/_list_footer.php"
+Dec 05 09:33:22 symfony [info] {sfPHPView} Decorate content with "/var/www/serialkiller/apps/backend/templates/layout.php"
+Dec 05 09:33:22 symfony [info] {sfPHPView} Render "/var/www/serialkiller/apps/backend/templates/layout.php"
+Dec 05 09:33:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 05 09:33:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Configuration 30.15 ms (12)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Factories 9.09 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Action "link/index" 40.22 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} View "Success" for "link/index" 50.50 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_assets" 0.54 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_flashes" 0.46 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_list_header" 0.49 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_filters" 18.86 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_filters_field" 12.75 ms (2)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_list" 4.55 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_list_batch_actions" 1.14 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_list_actions" 0.92 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebDebugLogger} Partial "link/_list_footer" 0.51 ms (1)
+Dec 05 09:33:22 symfony [info] {sfWebResponse} Send content (52016 o)
