@@ -11,7 +11,8 @@ Doctrine_Manager::getInstance()->bindComponent('Episode', 'doctrine');
  * @property integer $season
  * @property integer $episode
  * @property string $name
- * @property integer $show
+ * @property integer $serie
+ * @property date $date
  * @property Serie $Serie
  * @property Doctrine_Collection $Link
  * 
@@ -19,14 +20,16 @@ Doctrine_Manager::getInstance()->bindComponent('Episode', 'doctrine');
  * @method integer             getSeason()  Returns the current record's "season" value
  * @method integer             getEpisode() Returns the current record's "episode" value
  * @method string              getName()    Returns the current record's "name" value
- * @method integer             getShow()    Returns the current record's "show" value
+ * @method integer             getSerie()   Returns the current record's "serie" value
+ * @method date                getDate()    Returns the current record's "date" value
  * @method Serie               getSerie()   Returns the current record's "Serie" value
  * @method Doctrine_Collection getLink()    Returns the current record's "Link" collection
  * @method Episode             setId()      Sets the current record's "id" value
  * @method Episode             setSeason()  Sets the current record's "season" value
  * @method Episode             setEpisode() Sets the current record's "episode" value
  * @method Episode             setName()    Sets the current record's "name" value
- * @method Episode             setShow()    Sets the current record's "show" value
+ * @method Episode             setSerie()   Sets the current record's "serie" value
+ * @method Episode             setDate()    Sets the current record's "date" value
  * @method Episode             setSerie()   Sets the current record's "Serie" value
  * @method Episode             setLink()    Sets the current record's "Link" collection
  * 
@@ -75,7 +78,7 @@ abstract class BaseEpisode extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 126,
              ));
-        $this->hasColumn('show', 'integer', 4, array(
+        $this->hasColumn('serie', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
@@ -84,13 +87,21 @@ abstract class BaseEpisode extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
+        $this->hasColumn('date', 'date', null, array(
+             'type' => 'date',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
         $this->hasOne('Serie', array(
-             'local' => 'show',
+             'local' => 'serie',
              'foreign' => 'id'));
 
         $this->hasMany('Link', array(

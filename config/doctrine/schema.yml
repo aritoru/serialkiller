@@ -29,8 +29,15 @@ Episode:
       primary: false
       notnull: true
       autoincrement: false
-    show:
+    serie:
       type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    date:
+      type: date
       fixed: false
       unsigned: false
       primary: false
@@ -38,7 +45,7 @@ Episode:
       autoincrement: false
   relations:
     Serie:
-      local: show
+      local: serie
       foreign: id
       type: one
     Link:
@@ -94,5 +101,5 @@ Serie:
   relations:
     Episode:
       local: id
-      foreign: show
+      foreign: serie
       type: many

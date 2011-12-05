@@ -52,6 +52,6 @@ abstract class BaseSerie extends sfDoctrineRecord
         parent::setUp();
         $this->hasMany('Episode', array(
              'local' => 'id',
-             'foreign' => 'show'));
+             'foreign' => 'serie'));
     }
 }

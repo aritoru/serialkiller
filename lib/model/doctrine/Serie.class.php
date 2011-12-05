@@ -12,4 +12,21 @@
  */
 class Serie extends BaseSerie
 {
+  
+  public static function getSerieByName($name)
+  {
+    $serie = SerieTable::getInstance()
+        ->findOneByName($name);
+    
+    if ($serie == null) {
+      $newSerie = new Serie();
+      $newSerie->name = $name;
+      $newSerie->save();
+      return $newSerie; 
+    } else {
+      return $serie;
+    }
+  }
+
+  
 }

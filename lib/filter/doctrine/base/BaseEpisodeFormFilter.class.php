@@ -16,14 +16,16 @@ abstract class BaseEpisodeFormFilter extends BaseFormFilterDoctrine
       'season'  => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'episode' => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'name'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'show'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Serie'), 'add_empty' => true)),
+      'serie'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Serie'), 'add_empty' => true)),
+      'date'    => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
     ));
 
     $this->setValidators(array(
       'season'  => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'episode' => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'name'    => new sfValidatorPass(array('required' => false)),
-      'show'    => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Serie'), 'column' => 'id')),
+      'serie'   => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Serie'), 'column' => 'id')),
+      'date'    => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
     ));
 
     $this->widgetSchema->setNameFormat('episode_filters[%s]');
@@ -47,7 +49,8 @@ abstract class BaseEpisodeFormFilter extends BaseFormFilterDoctrine
       'season'  => 'Number',
       'episode' => 'Number',
       'name'    => 'Text',
-      'show'    => 'ForeignKey',
+      'serie'   => 'ForeignKey',
+      'date'    => 'Date',
     );
   }
 }

@@ -12,4 +12,31 @@
  */
 class Episode extends BaseEpisode
 {
+  
+  public static function insertEpisode(Serie $serie, $season, $episodeNum, $title, $date)
+  {
+    if ($serie instanceof Serie) {
+    $episode = EpisodeTable::getInstance()
+        ->findOneByName($title);
+    
+    if ($episode == null) {
+      $episode = new Episode();
+    }
+    $episode->serie = $serie->id;
+      $episode->name = $title;
+      $episode->season = $season;
+      $episode->episode = $episodeNum;
+      $episode->date = $date;
+      $episode->save();
+      return $episode; 
+    
+    
+      
+    } else {
+      throw Exception;
+    }
+    
+  }
+  
+  
 }

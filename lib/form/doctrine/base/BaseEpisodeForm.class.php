@@ -19,7 +19,8 @@ abstract class BaseEpisodeForm extends BaseFormDoctrine
       'season'  => new sfWidgetFormInputText(),
       'episode' => new sfWidgetFormInputText(),
       'name'    => new sfWidgetFormInputText(),
-      'show'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Serie'), 'add_empty' => false)),
+      'serie'   => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Serie'), 'add_empty' => false)),
+      'date'    => new sfWidgetFormDate(),
     ));
 
     $this->setValidators(array(
@@ -27,7 +28,8 @@ abstract class BaseEpisodeForm extends BaseFormDoctrine
       'season'  => new sfValidatorInteger(),
       'episode' => new sfValidatorInteger(),
       'name'    => new sfValidatorString(array('max_length' => 126)),
-      'show'    => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Serie'))),
+      'serie'   => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Serie'))),
+      'date'    => new sfValidatorDate(),
     ));
 
     $this->widgetSchema->setNameFormat('episode[%s]');
